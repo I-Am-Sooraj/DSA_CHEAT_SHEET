@@ -1,0 +1,26 @@
+# OS junk files
+.DS_Store
+Thumbs.db
+
+# Editor/IDE settings
+.vscode/
+.idea/
+*.iml
+
+# Java build files
+*.class
+*.jar
+*.war
+*.ear
+
+# Compiled output
+*.out
+*.exe
+
+# Logs & temp files
+*.log
+*.tmp
+
+# Backup files
+*~
+*.bak
