@@ -2,25 +2,40 @@
 .DS_Store
 Thumbs.db
 
-# Editor/IDE settings
+# Editor / IDE settings
 .vscode/
 .idea/
 *.iml
 
-# Java build files
+# Java compiled files
 *.class
 *.jar
 *.war
+*.nar
 *.ear
 
-# Compiled output
+# Compiled output (manual compilation)
 *.out
 *.exe
 
-# Logs & temp files
+# Logs & temporary files
 *.log
 *.tmp
 
 # Backup files
 *~
 *.bak
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Virtual machine crash logs
+hs_err_pid*
+replay_pid*
+
+# Output directories 
+bin/
+out/
