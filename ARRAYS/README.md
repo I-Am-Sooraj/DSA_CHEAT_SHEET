@@ -70,7 +70,7 @@ Arrays.fill(arr, 9);                 // [9, 9, 9]
 - Linear Search — scan elements one by one until a match is found.
   - See: [LinearSearch.java](./LinearSearch.java)
 - Binary Search — find an element in a sorted array in O(log n).
-  - See: BinarySearch.java (planned)
+  - See: [BinarySearch.java](./BinarySearch.java)
 - Two Sum (Brute Force / HashMap)
   - See: TwoSum.java (planned)
 - Max/Min in Array
@@ -89,6 +89,21 @@ for (int i = 0; i < arr.length; i++) {
 }
 // index == 2
 ```
+---
+
+## 🔎 Binary Search (overview)
+
+Binary search works on sorted arrays (ascending or descending). It repeatedly halves the search space by comparing the middle element to the target.
+
+- Time: O(log n)
+- Space: O(1)
+- Requires: the array must be sorted; duplicates are okay (returns one occurrence).
+
+Example call:
+```java
+int idx = BinarySearch.binarySearch(new int[]{1, 3, 5, 7, 9}, 7); // -> 3
+```
+
 
 ---
 
