@@ -65,45 +65,63 @@ Arrays.fill(arr, 9);                 // [9, 9, 9]
 
 ---
 
-## 🧪 Examples in this folder
+## 🧪 Examples
 
-- Linear Search — scan elements one by one until a match is found.
-  - See: [LinearSearch.java](./LinearSearch.java)
-- Binary Search — find an element in a sorted array in O(log n).
-  - See: [BinarySearch.java](./BinarySearch.java)
-- Two Sum (Brute Force / HashMap)
-  - See: TwoSum.java (planned)
-- Max/Min in Array
-  - See: MaxMin.java (planned)
+### 1) Linear Search
 
----
+What it means:
+- Scan the array from left to right and compare each element with the target.
+- Return the index of the first match; if not found, return -1.
 
-## 🏃 Quick Demo: Linear Search
-
+Quick demo:
 ```java
 int[] arr = {4, 2, 7, 1};
 int target = 7;
 int index = -1;
 for (int i = 0; i < arr.length; i++) {
-    if (arr[i] == target) { index = i; break; }
+  if (arr[i] == target) { index = i; break; }
 }
 // index == 2
 ```
+
+Time & Space:
+- Best: O(1)  (match at the first position)
+- Average: O(n)
+- Worst: O(n)
+- Space: O(1)
+
+See code: [LinearSearch.java](./LinearSearch.java)
+
 ---
 
-## 🔎 Binary Search (overview)
+### 2) Binary Search
 
-Binary search works on sorted arrays (ascending or descending). It repeatedly halves the search space by comparing the middle element to the target.
+What it means:
+- Works on a sorted array (ascending or descending).
+- Repeatedly checks the middle element and halves the search space.
 
-- Time: O(log n)
-- Space: O(1)
-- Requires: the array must be sorted; duplicates are okay (returns one occurrence).
-
-Example call:
+Quick demo (call):
 ```java
 int idx = BinarySearch.binarySearch(new int[]{1, 3, 5, 7, 9}, 7); // -> 3
 ```
 
+Time & Space:
+- Time: O(log n)
+- Space: O(1)
+- Requires: array must be sorted (duplicates allowed; returns one occurrence)
+
+See code: [BinarySearch.java](./BinarySearch.java)
+
+---
+
+More coming to this folder:
+- Max subarray (brute-force sum)
+- Trapping Rainwater
+- Best Time to Buy and Sell Stock
+- Two Sum (Brute Force / HashMap)
+- Max/Min in Array
+
+These will be added over time with clear explanations, examples, and complexities.
 
 ---
 
